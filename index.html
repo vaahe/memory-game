@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="Images/icon.png">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Guess the Card</title>
+</head>
+
+<body>
+<div class="modal" id="myModal">
+    <div class="modal-content">
+        <h1>Congratulations! You won</h1>
+        <button class="startAgain" id="startAgain">START AGAIN</button>
+    </div>
+</div>
+
+<div class="selection-container">
+    <p>Choose the size of the game:</p>
+    <label>
+        <select id="size" onchange="selectChange()">
+            <option id="opt1" selected="selected">4x3</option>
+            <option id="opt2">5x4</option>
+            <option id="opt3">6x5</option>
+        </select>
+    </label>
+</div>
+
+<div class="grid-container" id="gridContainer"></div>
+
+</body>
+
+<script type="text/javascript" src="script.js"></script>
+</html>
